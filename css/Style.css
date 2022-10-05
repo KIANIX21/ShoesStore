@@ -1,0 +1,228 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+/* Variabel css */
+:root{
+    --header-height: 3rem;
+
+/* Colors */
+--first-color:  #2e4471;
+--first-color-alt: #1d335f;
+--title-color: #393939;
+--text-color: #707070;
+--text-color-light: #a6a6a6;
+--body-color: #fbfefd;
+--container-color: #fff;
+/* Font and typograph */
+--body-font: 'Poppins', sans-serif;
+--biggest-font-size: 2.25rem;
+--h1-font-size: 1.5rem;
+--h2-font-size: 1.25rem;
+--h3-font-size: 1rem;
+--normal-font-size: .938rem;
+--small-font-size: .813rem;
+--smaller-font-size: .75rem;
+
+/* Font Weight */
+--font-medium: 500;
+--font-semi-bold: 600;
+
+/* Margin */
+--mb-1: .5rem;
+--mb-2:  1rem;
+--mb-3:  1.5rem;
+--mb-4:  2rem;
+--mb-5:  2.5rem;
+--mb-6:  3rem;
+
+/* Z index */
+--z-tolltip: 10;
+--z-fixed: 100;
+
+}
+
+@media screen and (min-width: 768px){/* rules ini tidak bisa di pakai jika screen responsive kurang dari 768px */
+    :root{
+        --biggest-font-size: 4rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;  
+    }
+}
+
+/* Base */
+*,::before, ::after{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* Variable dark theme */
+
+
+/* Button Dark/light */
+
+body{
+    margin: var(--header-height) 0 0 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+    line-height: 1.6;/* jarak antar barisnya */
+}
+h1, h2, h3, p, ul{
+    margin: 0;
+}
+
+ul{
+    padding: 0;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* Class CSS */
+.section{
+    padding: 4rem 0 2rem;
+}
+.section-title, .section-subtitle{
+    text-align: center;
+}
+.section-title{
+font-size: var(--h1-font-size);
+color: var(--title-color);
+margin-bottom: var(--mb-3);
+}
+
+.section-subtitle{
+    display: block;
+    color: var(--first-color);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-1);
+}
+/* layout */
+.bd-container{
+    max-width: 960px;
+    width: calc(100% - 2rem);
+    margin-left: var(--mb-2);
+    margin-right: var(--mb-2);
+}
+.bd-grid{
+    display: grid;
+    gap: 1.5rem;
+}
+
+.l-header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--body-color);
+}
+/* Nav */
+.nav{
+    max-width: 1024px;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .nav__menu{
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        padding: 1.5rem 0 1rem;
+        text-align: center;
+        background-color: var(--body-color);
+        transition: .4s;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 1);
+        border-radius: 0 0 1rem 1rem;
+        z-index: var(--z-fixed);
+    }
+}
+
+.nav__item{
+    margin-bottom: var(--mb-2);
+}
+
+.nav__link, .nav__logo, .nav__toggle, .nav_shop{
+    color: var(--text-color);
+    font-weight: var(--font-medium);
+}
+
+.nav__logo:hover{
+    color: var(--first-color);
+}
+
+.nav__link{
+    transition: .3s;
+}
+
+.nav__link:hover{
+    color: var(--first-color);
+}
+
+.nav__toggle, .nav_shop{
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+/* Show menu */
+.show-menu{
+    top: var(--header-height);
+
+}
+
+/* Activity Menu */
+.active-link{
+    color: var(--first-color);
+}
+
+/* change background header */
+.scrollHeader{
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 1);
+}
+
+/* Scroll top */
+
+
+/* show scrolltop */
+
+/* Home */
+
+/* Buttons */
+
+/* About */
+
+/* Detail */
+
+/* Service */
+
+/* product */
+
+/* Size Chart */
+
+/* Contact */
+
+/* Footer */
+
+/* Media Queries */
+
+/* Class CSS */
+
+/* For tall screen on mobile y desktop */
