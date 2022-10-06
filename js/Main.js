@@ -49,3 +49,39 @@ if(this.scrollY >= 200) nav.classList.add('scroll-header');
 else nav.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scrollHeader)
+
+// Show Scroll Back To Top //
+function scrollTop(){
+    const scrollTop = document.getElementById('scroll-Top')
+    // when the scroll is higher than 560 viewport height
+    if(this.scrollY >= 560) scrollTop.classList.add('show-scroll');
+    else scrollTop.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scrollTop)
+
+// slide show
+var slideIndex = 1;
+showSlides(slideIndex);
+// next/previous controls
+function plusSlides(n){
+    showSlides(slideIndex += n);
+}
+// thumbnail img control
+function currentSlide(n){
+    showSlides(slideIndex = n);
+}
+function showSlides(n){
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dots");
+    if(n > slides.length) {slideIndex = 1}
+    if(n < 1){slideIndex = slides.length}
+    for(i = 0; i < slides.length; i++){
+        slides[i].style.display = "none";
+    }
+    for(i = 0; i < dots.length; i++){
+        dots[i].className = dots[i].className.replace(" active","");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+}

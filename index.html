@@ -11,7 +11,9 @@
 </head>
 <body>
     <!----Scroll Top!---->
-
+<a href="#" class="scrollTop" id="scroll-Top">
+    <i class='bx bx-chevron-up scrollTop_icon'></i>
+</a>
     <!----Header!---->
     <header class="l-header" id="header">
         <nav class="nav bd-container">
@@ -36,15 +38,102 @@
 
     <main class="l-main">
         <!----Home---->
+        <section class="home" id="home">
+            <div class="slideshow-container">
 
+                <div class="mySlides fade">
+                    <div class="home__container bd-container bd-grid">
+                        <div class="home__data">
+                            <h1 class="home__title">ShoesStore</h1>
+                            <h2 class="home__subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
+                            <a href="#" class="button">Explore Now</a>
+                        </div>
+                        <img src="images/1.png" alt="" class="home__img">
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="home__container bd-container bd-grid">
+                        <div class="home__data">
+                            <h1 class="home__title">ShoesStore</h1>
+                            <h2 class="home__subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
+                            <a href="#" class="button">Explore Now</a>
+                        </div>
+                        <img src="images/2.png" alt="" class="home__img">
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="home__container bd-container bd-grid">
+                        <div class="home__data">
+                            <h1 class="home__title">ShoesStore</h1>
+                            <h2 class="home__subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
+                            <a href="#" class="button">Explore Now</a>
+                        </div>
+                        <img src="images/3.png" alt="" class="home__img">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+            <!--Next and Previous button-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            <!--dot circle-->
+            <div style="text-align:center;">
+                <span class="dots" onclick="currentSlide(1)"></span>
+                <span class="dots" onclick="currentSlide(2)"></span>
+                <span class="dots" onclick="currentSlide(3)"></span>
+            </div>
         <!----About---->
-
+        <section class="about section bd-container" id="about">
+            <div class="about__container bd-grid">
+                <div class="about__data">
+                    <span class="section-subtitle about__initial">About us</span>
+                    <h2 class="section-title about__initial">We create the best local shoes</h2>
+                    <p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, quidem iusto ex nemo nam quo excepturi natus? Quod reiciendis, nam recusandae voluptatum distinctio, beatae aliquid eius magni et molestiae odio?</p>
+                    <a href="#" class="button">Explore history</a>
+                </div>
+                <img src="images/aboutus.jpg" alt="" class="about__img">
+            </div>
+        </section>
 
         <!----Service---->
-
+<section class="services section bd-container" id="services">
+    <span class="section-subtitle">Offering</span>
+    <h2 class="section-title">Our Amazing Services</h2>
+    <div class="services__container bd-grid">
+        <div class="services__content">
+            <img src="images/1.3.png" alt="" class="services__img">
+            <h3 class="services__title">Upper Canvas</h3>
+            <p class="services__description">SUPER RINGAN, Superlite Phylon Sole dibuat dari bahan compound khusus, yang menghasilkan outsole yang sangat empuk dan nyaman.</p>
+        </div>
+        <div class="services__content">
+            <img src="images/2.3.png" alt="" class="services__img">
+            <h3 class="services__title">Eva Sponge Insole</h3>
+            <p class="services__description">EVA Sponge Insole memberikan Bantalan dan Kenyamanan Tertinggi</p>
+        </div>
+        <div class="services__content">
+            <img src="images/3.png" alt="" class="services__img">
+            <h3 class="services__title">Stitching</h3>
+            <p class="services__description">Stitching (Jahitan) yang rapih menjadikan sepatu memiliki bentuk yang bagus, kokoh, nyaman, dan tahan lama.</p>
+        </div>
+    </div>
+</section>
 
         <!----Product---->
-
+<section class="product section bd-container" id="products">
+    <span class="section-subtitle"></span>
+    <h2 class="section-title">PRODUCTS of the week</h2>
+    <div class="products__container">
+        <img src="images/1.png" alt="" class="product__img">
+        <h3 class="products__name">Sepatu aldas hitam</h3>
+        <span class="products__detail">Low</span>
+        <span class="products__price">Rp. 199.000</span>
+        <a href="#" class="buttton product__botton_detail">Detail Product</a>
+        <a href="#" class="button product__button"></a>
+    </div>
+</section>
 
         <!---- Contact us---->
 
