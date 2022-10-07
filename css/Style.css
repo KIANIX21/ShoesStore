@@ -433,9 +433,6 @@ margin-bottom: var(--mb-3);
     width: 90%;
     margin: auto;
 }
-
-/* Size Chart */
-
 /* Contact */
 .contact__container{
     text-align: center;
@@ -446,7 +443,7 @@ margin-bottom: var(--mb-3);
 }
 /* Footer */
 .footer__container{
-    grid-template-columns: repeat(auto-fit, minimax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     row-gap: 2rem;
 }
 
@@ -459,11 +456,11 @@ margin-bottom: var(--mb-3);
 .footer__description{
     display: block;
     font-size: var(--small-font-size);
-    margin: .25rem 0 var (--mb-3);
+    margin: .25rem 0 var(--mb-3);
 }
 
 .footer__social{
-    font-size: 1.srem;
+    font-size: 1.5rem;
     color: var(--title-color);
     margin-right: var(--mb-2);
 }
@@ -490,7 +487,80 @@ margin-bottom: var(--mb-3);
     margin-top: 3.5rem;
 }
 /* Media Queries */
+@media screen and (min-width: 576px){
+    .home__container,
+    .about__container{
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    }
+}
+.prev, .next{
+    top: 50%;
+}
+.home{
+    margin-left: var(--mb-4);
+    margin-right: var(--mb-4);
+}
+.about__data, .about__initial,
+.contact__container, .contact__initial{
+    text-align: initial;
+}
+.about__img{
+    width: 380px;
+    order: -1; /* agar ketuker tempat gambar dengan tulisan*/
+}
 
+.contact__container{
+    grid-template-columns: 1.75fr 1fr;
+    align-items: center;
+}
+
+.contact__button{
+    justify-self: center;
+}
+
+@media screen and (min-width: 768px){
+    body{
+        margin: 0;
+    }
+    .section{
+        padding-top: 8rem;
+    }
+    .nav{
+        height: calc(var(--header-height) + 1.5rem);
+    }
+    .nav__list{
+        display: flex;
+    }
+    .nav__item{
+        margin-left: var(--mb-5);
+        margin-bottom: 0;
+    }
+    .nav__toggle{
+        display: none;
+    }
+    .home__container{
+        height: 100vh;
+        justify-items: center;
+    }
+    .services__container,
+    .products__container{
+        margin-top: var(--mb-6);
+    }
+}
+@media screen and (min-width: 960px){
+    .bd-container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .home__img{
+        width: 500px;
+    }
+    .about__container,
+    .footer__container{
+        column-gap: 7rem;
+    }
+}
 /* Class CSS */
 
 /* For tall screen on mobile y desktop */
