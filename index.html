@@ -27,23 +27,74 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">about</a></li>
-                    <li class="nav__item"><a href="#Quality" class="nav__link">Quality</a></li>
-                    <li class="nav__item"><a href="#Product" class="nav__link">Product</a></li>
-                    <li class="nav__item"><a href="#Contact" class="nav__link">Contact</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="#products" class="nav__link">Product</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
             </div>
             <div class="nav_shop" id="nav-shop">
-                 <i class='bx bx-shopping-bag'></i>
+                <a href="#" class="nav__icon">
+                    <i class='bx bx-shopping-bag'></i>
+                    <span>2</span>
+                </a>
+                <div class="nav__shop-content">
+                    <div class="title__shop">
+                        <span>Keranjang Belanja </span>
+                    </div>
+
+                    <div class="item">
+                        <div class="image_cart">
+                            <div class="image_c">
+                                <img src="images/1.png" alt="">
+                            </div>
+                        </div>
+                            <div class="description">
+                                <span>Sepatu aldas hitam</span>
+                                <span>1 pcs</span>
+                            </div>
+                            <div class="total-price">Rp. 199.000</div>
+                            <a href="#" class="delete-item">
+                                <i class='bx bx-x'></i>
+                            </a>   
+                    </div>
+
+                    <div class="item">
+                        <div class="image_cart">
+                            <div class="image_c">
+                                <img src="images/2.png" alt="">
+                            </div>
+                        </div>
+                            <div class="description">
+                                <span>Sepatu-Kenji-Putih</span>
+                                <span>1 pcs</span>
+                            </div>
+                            <div class="total-price">Rp. 199.000</div>
+                            <a href="#" class="delete-item">
+                                <i class='bx bx-x'></i>
+                            </a>
+                    </div>
+
+                    <div class="Total-all">
+                        <span>Total</span>
+                        <span>Rp. 400.000</span>
+                    </div>
+                    
+                    <div class="btn-viewcard">
+                        <a href="#" class="button-top">View Card</a>
+                    </div>
+                    <div class="btn-checkout">
+                        <a href="#" class="button-top2">CheckOut</a>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
 
     <main class="l-main">
         <!----Home---->
-        <section class="home" id="home">
+        <section class="home" id="home" style="background-color: #aebdca;">
             <div class="slideshow-container">
-
                 <div class="mySlides fade">
                     <div class="home__container bd-container bd-grid">
                         <div class="home__data">
@@ -90,9 +141,9 @@
             </div>
         <!----About---->
         <section class="about section bd-container" id="about">
+            <span class="section-subtitle" style="font-size: 30px;">About us</span>
             <div class="about__container bd-grid">
                 <div class="about__data">
-                    <span class="section-subtitle about__initial">About us</span>
                     <h2 class="section-title about__initial">We create the best local shoes</h2>
                     <p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, quidem iusto ex nemo nam quo excepturi natus? Quod reiciendis, nam recusandae voluptatum distinctio, beatae aliquid eius magni et molestiae odio?</p>
                     <a href="#" class="button">Explore history</a>
@@ -100,10 +151,12 @@
                 <img src="images/aboutus.jpg" alt="" class="about__img">
             </div>
         </section>
+        </div>
 
         <!----Service---->
+        <div style="background-color: #aebdca;">
 <section class="services section bd-container" id="services">
-    <span class="section-subtitle">Offering</span>
+    <span class="section-subtitle" style="font-size: 30px;">Services</span>
     <h2 class="section-title">Our Amazing Services</h2>
     <div class="services__container bd-grid">
         <div class="services__content">
@@ -123,7 +176,7 @@
         </div>
     </div>
 </section>
-
+</div>
         <!----Product---->
 <section class="product section bd-container" id="products">
     <span class="section-subtitle"></span>
@@ -194,9 +247,10 @@
 </section>
 
         <!---- Contact us---->
+        <div style="background-color: #aebdca;">
         <section class="contact section bd-container" id="contact">
             <div class="contact__container bd-grid">
-                <div class="contac__data">
+                <div class="contact__data">
                     <span class="section-subtitle contact__initial">Let's Talk</span>
                     <h2 class="section-title contact__initial">Contact Us</h2>
                     <p class="contact__description">Jika kamu ingin membeli sepatu di toko kami, hubungi kami dan kami akan segera melayani kamu dengan layanan 24/7</p>
@@ -206,6 +260,7 @@
                 </div>
             </div>
         </section>
+    </div>
     </main>
     <!----Footer---->
     <footer class="footer section bd-container">
@@ -213,12 +268,12 @@
             <div class="footer__content">
                 <a href="#" class="footer__logo">Shoes</a>
                 <span class="footer__description">Store</span>
-            </div>
             <div>
                 <a href="#" class="footer__social"><i class='bx bxl-facebook-circle'></i></a>
                 <a href="#" class="footer__social"><i class='bx bxl-instagram' ></i></a>
                 <a href="#" class="footer__social"><i class='bx bxl-twitter' ></i></a>
             </div>
+        </div>
             <div class="footer__content">
                 <h3 class="footer__title">Services</h3>
                 <ul>
@@ -231,7 +286,7 @@
                 <h3 class="footer__title">Information</h3>
                 <ul>
                     <li><a href="#" class="footer__link"></a>Event</li>
-                    <li><a href="#" class="footer__link"></a>Contac Us</li>
+                    <li><a href="#" class="footer__link"></a>Contact Us</li>
                     <li><a href="#" class="footer__link"></a>Privacy Policy</li>
                     <li><a href="#" class="footer__link"></a>Terms Of Services</li>
                 </ul>

@@ -85,3 +85,17 @@ function showSlides(n){
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
 }
+
+// scroll reveal
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '30px',
+    duration: 2000,
+    reset: true
+});
+
+sr.reveal(`.home, .about__data, .about__img, 
+            .services__content, .product, .contact__data, 
+            .contact__button, .footer__content, .detail__img, .detail__data`,{
+        interval: 200
+})
