@@ -55,7 +55,7 @@
 }
 
 /* Base */
-*,::before, ::after{
+*,:before, :after{
     box-sizing: border-box;
 }
 
@@ -280,6 +280,13 @@ margin-bottom: var(--mb-3);
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
+}
+/* slide in detailproduct */
+.slider-nav{
+    width: 35%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 /* position next button */
 .next{
@@ -730,7 +737,18 @@ margin-bottom: var(--mb-3);
 .btn-checkout{
     font-size: var(--smaller-font-size);
 }
+.contact-form{
+    flex-direction: column;
+  }
+  .msg textarea{
+    height: 80px;
+  }
+  .input-fields,
+  .msg{
+    width: 100%;
+  }
 }
+
 @media screen and (min-width: 768px){
     body{
         margin: 0;
@@ -772,7 +790,45 @@ margin-bottom: var(--mb-3);
     .footer__container{
         column-gap: 7rem;
     }
+    
 }
-/* Class CSS */
 
+/* Form */
+  .contact-form{
+    display: flex;
+  }
+  
+  .input-fields{
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+  }
+  
+  .input-fields,
+  .msg{
+    width: 48%;
+  }
+  
+  .input-fields .input,
+  .msg textarea{
+    margin: 10px 0;
+    background: transparent;
+    border: 2px solid var(--text-color);
+    padding: 10px;
+    color: var(--first-color);
+    width: 100%;
+  }
+  
+  .msg textarea{
+    height: 212px;
+  }
+  .btn {
+    background: var(--first-color);
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+}
 /* For tall screen on mobile y desktop */
