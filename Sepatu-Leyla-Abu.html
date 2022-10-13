@@ -1,66 +1,93 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Product Card/Page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/Style.css"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <title>ShoesStore</title>
 </head>
-  <body>
-    <div class = "card-wrapper">
-      <div class = "card">
-        <!-- card left -->
-        <div class = "product-imgs">
-          <div class = "img-display">
-            <div class = "img-showcase">
-              <img src = "images/4.png" alt = "shoe image">
-              <img src = "images/4.1.png" alt = "shoe image">
-              <img src = "images/4.2.png" alt = "shoe image">
-              <img src = "images/size wanita.png" alt = "shoe image">
-            </div>
-          </div>
-          <div class = "img-select">
-            <div class = "img-item"style="width: 50%; height: 50%;">
-              <a href = "#" data-id = "1">
-                <img src = "images/4.png" alt = "shoe image">
-              </a>
-            </div>
-            <div class = "img-item" style="width: 50%; height: 50%; margin-top: 25px;">
-              <a href = "#" data-id = "2">
-                <img src = "images/4.1.png" alt = "shoe image">
-              </a>
-            </div>
-            <div class = "img-item"style="width: 50%; height: 50%;margin-top: 25px;">
-              <a href = "#" data-id = "3">
-                <img src = "images/4.2.png" alt = "shoe image">
-              </a>
-            </div>
-            <div class = "img-item"style="width: 50%; height: 50%;margin-top: 25px;">
-              <a href = "#" data-id = "4" >
-                <img src = "images/size wanita.png" alt = "shoe image">
-              </a>
-            </div>
-          </div>
+<body>
+  <!-- Navbar -->
+  <header class="l-header" id="header">
+    <nav class="nav bd-container">
+        <div class="nav__toggle" id="nav-toggle">
+            <i class='bx bx-menu'></i>
         </div>
-        <!-- card right -->
-        <div class = "product-content">
-          <h2 class = "product-title">Sepatu-Leyla-Abu</h2>
-          <a href = "#" class = "product-link">visit ShoesStore</a>
-          <div class = "product-rating">
-            <i class = "fas fa-star"></i>
-            <i class = "fas fa-star"></i>
-            <i class = "fas fa-star"></i>
-            <i class = "fas fa-star"></i>
-            <i class = "fas fa-star-half-alt"></i>
-            <span>4.8</span>
-          </div>
+        <a href="index.html" class="nav__logo">ShoesStore</a>
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                <li class="nav__item"><a href="AboutUs.html" class="nav__link">About</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                <li class="nav__item"><a href="#products" class="nav__link">Product</a></li>
+                <li class="nav__item"><a href="Contact.html" class="nav__link">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav_shop" id="nav-shop">
+            <button>Login</button>
+        </div>
+    </nav>
+</header>
+<!-- Navbar -->
 
-          <div class = "product-price">
+<!-- Gambar Product -->
+<main class="l-main" style="background-color: #ABD9FF; margin-top: 70px;">
+    <div class = "card-wrapper">
+        <div class = "card">
+          <!-- card left -->
+          <div class = "product-imgs">
+            <div class = "img-display">
+              <div class = "img-showcase">
+                <img src = "images/5.png" alt = "shoe image">
+                <img src = "images/5.1.png" alt = "shoe image">
+                <img src = "images/5_2.png" alt = "shoe image">
+                <img src = "images/size wanita.png" alt = "shoe image">
+              </div>
+            </div>
+            <div class = "img-select">
+              <div class = "img-item"style="width: 50%; height: 50%;">
+                <a href = "#" data-id = "1">
+                  <img src = "images/5.png" alt = "shoe image">
+                </a>
+              </div>
+              <div class = "img-item" style="width: 50%; height: 50%; margin-top: 25px;">
+                <a href = "#" data-id = "2">
+                  <img src = "images/5.1.png" alt = "shoe image">
+                </a>
+              </div>
+              <div class = "img-item"style="width: 50%; height: 50%;margin-top: 25px;">
+                <a href = "#" data-id = "3">
+                  <img src = "images/5_2.png" alt = "shoe image">
+                </a>
+              </div>
+              <div class = "img-item"style="width: 50%; height: 50%;margin-top: 25px;">
+                <a href = "#" data-id = "4" >
+                  <img src = "images/size wanita.png" alt = "shoe image">
+                </a>
+              </div>
+            </div>
+        </div>
+        <!-- gambar product -->
+
+        <!-- product description -->
+    <div class = "product-content">
+        <h1 class = "product-title">Sepatu-Leyla-Abu</h1>
+        <a href = "#" class = "product-link">visit ShoesStore</a>
+        <div class = "product-rating">
+          <i class = "fas fa-star"></i>
+          <i class = "fas fa-star"></i>
+          <i class = "fas fa-star"></i>
+          <i class = "fas fa-star"></i>
+          <i class = "fas fa-star-half-alt"></i>
+          <span>4.7</span>
+        </div>
+        <div class = "product-price">
             <p class = "last-price">Old Price: <span>Rp.349.000</span></p>
-            <p class = "new-price">New Price: <span>Rp.185.000 </span></p>
+            <p class = "new-price">New Price: <span>Rp.185.000</span></p>
           </div>
-
           <div class = "product-detail">
             <h2>about this item: </h2>
             <p>"SUPER RINGAN, Superlite Phylon Sole dibuat dari bahan compound khusus, yang menghasilkan outsole yang sangat empuk dan nyaman.
@@ -78,11 +105,10 @@
                 Bila ukuran panjang telapak kaki anda 24,5cm, kami rekomendasikan untuk memesan size 39 (25,6cm).</p>
             <ul>
               <li>Color: <span>Grey</span></li>
-              <li>Available: <span>New Arrival</span></li>
+              <li>Available: <span>in stock</span></li>
               <li>Category: <span>Shoes</span></li>
             </ul>
           </div>
-
           <div class = "purchase-info">
             <input type = "number" min = "0" value = "1">
             <button type = "button" class = "btn">
@@ -90,12 +116,50 @@
             </button>
             <button type = "button" class = "btn">Compare</button>
           </div>
-        </div>
-      </div>
-    </div>
-</div>
-    <script>
-    const imgs = document.querySelectorAll('.img-select a');
+          </div>
+        </main>
+        <footer class="footer section bd-container">
+            <div class="footer__container bd-grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">Shoes</a>
+                    <span class="footer__description">Store</span>
+                <div>
+                    <a href="#" class="footer__social"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-instagram' ></i></a>
+                    <a href="#" class="footer__social"><i class='bx bxl-twitter' ></i></a>
+                </div>
+            </div>
+                <div class="footer__content">
+                    <h3 class="footer__title">Services</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Shipping and Returns</a></li>
+                        <li><a href="#" class="footer__link">Mesurement Guide</a></li>
+                        <li><a href="#" class="footer__link">Size Conversion Chart</a></li>
+                    </ul>
+                </div>
+                <div class="footer__content">
+                    <h3 class="footer__title">Information</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link"></a>Event</li>
+                        <li><a href="Contact.html" class="footer__link"></a>Contact Us</li>
+                        <li><a href="#" class="footer__link"></a>Privacy Policy</li>
+                        <li><a href="#" class="footer__link"></a>Terms Of Services</li>
+                    </ul>
+                </div>
+                <div class="footer__content">
+                    <h3 class="footer__title">Adress</h3>
+                    <ul>
+                        <li>Jl. Doang Jadian Kagak KM 12.8</li>
+                        <li>Bogor 16913 - Indonesia</li>
+                        <li>Phone : +62812xxxxx</li>
+                        <li>Whatsapp : 08211xxxxx</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="footer__copy">&#169; 2022 Group 4. All right reserved</p>
+        </footer>
+          <script>
+            const imgs = document.querySelectorAll('.img-select a');
         const imgBtns = [...imgs];
         let imgId = 1;
         
@@ -114,6 +178,6 @@
         }
         
         window.addEventListener('resize', slideImage);
-        </script>
-  </body>
+          </script>
+</body>
 </html>
