@@ -6,8 +6,8 @@
     --header-height: 3rem;
 
 /* Colors */
---first-color:  #012d80;
---first-color-alt: #021a47;
+--first-color:  #2e4471;
+--first-color-alt: #1D335F;
 --title-color: #393939;
 --text-color: #707070;
 --text-color-light: #a6a6a6;
@@ -349,7 +349,8 @@ margin-bottom: var(--mb-3);
 }
 .services__img{
     width: 170px;
-    border-radius: .5rem;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: var(--mb-2);
 }
 .services__title{
@@ -801,16 +802,15 @@ margin-bottom: var(--mb-3);
   .input-fields{
     display: flex;
     flex-direction: column;
-    margin-right: 4%;
+    margin-right: auto;
+    margin-left: auto;
   }
   
-  .input-fields,
-  .msg{
+  .input-fields{
     width: 48%;
   }
   
-  .input-fields .input,
-  .msg textarea{
+  .input-fields .input{
     margin: 10px 0;
     background: transparent;
     border: 2px solid var(--text-color);
@@ -819,12 +819,13 @@ margin-bottom: var(--mb-3);
     width: 100%;
   }
   
-  .msg textarea{
+  .input-fields textarea{
     height: 212px;
   }
   .btn {
     background: var(--first-color);
     text-align: center;
+    margin-top: 10px;
     padding: 15px;
     border-radius: 5px;
     color: #fff;
@@ -833,8 +834,7 @@ margin-bottom: var(--mb-3);
 }
 /* Detail Product Css */
 .card-wrapper{
-    max-width: 65%;
-    margin: 0 auto;
+    max-width: 100%;
 }
 img{
     width: 100%;
@@ -866,17 +866,16 @@ img{
     opacity: 0.8;
 }
 .product-content{
-    padding: 2rem 1rem;
+    margin-top: auto;
 }
 .product-title{
-    font-size: 3rem;
-    text-transform: capitalize;
-    font-weight: 700;
-    position: relative;
-    color: #12263a;
-    margin: 1rem 0;
+text-transform: capitalize;
+font-weight: 700;
+position: relative;
+color: var(--first-color);
+margin: 1rem 0;
 }
-.product-title::after{
+.product-title:after{
     content: "";
     position: absolute;
     left: 0;
@@ -939,7 +938,6 @@ img{
 .product-detail ul li{
     margin: 0;
     list-style: none;
-    background: url(shoes_images/checked.png) left center no-repeat;
     background-size: 18px;
     padding-left: 1.7rem;
     margin: 0.4rem 0;
@@ -978,7 +976,6 @@ img{
 .purchase-info .btn:hover{
     opacity: 0.9;
 }
-
 @media screen and (min-width: 992px){
     .card{
         display: grid;
@@ -986,12 +983,11 @@ img{
         grid-gap: 1.5rem;
     }
     .card-wrapper{
-        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .product-imgs{
+    .product-img{
         display: flex;
         flex-direction: column;
         justify-content: center;
