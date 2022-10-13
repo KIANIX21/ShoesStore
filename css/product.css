@@ -362,7 +362,7 @@ margin-bottom: var(--mb-3);
 }
 /* product */
 .products__container{
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 200px);
     justify-content: center;
 }
 .products__content{
