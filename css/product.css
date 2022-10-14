@@ -362,8 +362,8 @@ margin-bottom: var(--mb-3);
 }
 /* product */
 .products__container{
-    grid-template-columns: repeat(4, 200px);
-    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    row-gap: 2.5rem;
 }
 .products__content{
     position: relative;
