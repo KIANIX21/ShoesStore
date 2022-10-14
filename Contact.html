@@ -97,11 +97,22 @@
     </div>
     <p class="footer__copy">&#169; 2022 Group 4. All right reserved</p>
 </footer>
-<script>
-    function button() {
-  alert("Your Question Have Been Sent");
-}
-</script>
+        <script type="text/javascript">
+      function button() {
+        swal({
+          title: 'Your Question Have Been Sent',
+          icon: 'success',
+          button: true,
+        }).then(function () {
+          window.location = 'index.html';
+        });
+      }
+    </script>
+     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+     <script>
+       import swal from 'sweetalert';
+     </script>
+     
 <script src="js/Main.js"></script>
 </body>
 </html>
