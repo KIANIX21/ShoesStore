@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>ShoesStore</title>
+</head>
+<body style="background-color: #ABD9FF;">
+        <div class="container-fluid p-3 mt-5" >
+            <div class="row">
+
+                <div class="col-sm-9 col-md-7 col-lg-4 mx-auto">
+                    <div class="card bg-white border-0 shadow rounded-3 my-5">
+                        <div class="card-body p-4 p-sm-5">
+                            <h2 class="card-title text-center mb-5 fw-bold text-dark"style="font-family: roboto;">Sign In</h2>
+                                <form method="post" onsubmit="return validation()">
+                                    <div class="input-group mb-3">
+                                        <input class="form-control" id="username" name="username" placeholder="username" type="username" value="" required>    
+                                    </div>
+                                        <div class="input-group mb-3">
+                                            <input type="password" class="form-control" id="password" name="password"placeholder="Password" value="" required>
+                                        </div>
+                                            <div class="text-center mb-3">
+                                        <small class="text-center text-dark">
+                                        Don't have an account? <a href="signup.html">Sign Up</a>
+                                        </small>
+                                    </div>
+                                <div class="d-grid">
+                                    <button class="btn btn-primary btn-login text-uppercase fw-bold" type="submit">Signin</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>                        
+                </div>
+            </div>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        function validation() {
+            var username = document.getElementById("username").value;
+            Swal.fire({
+                icon: 'success',
+                title: 'Login Successfully' + '\n Welcome' + '\n' + username
+
+            }).then(function () {
+                window.location = 'Home.html';
+            });
+            return false;
+        }
+    </script>
+</body>
+</html>

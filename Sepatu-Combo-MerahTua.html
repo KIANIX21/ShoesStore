@@ -26,19 +26,16 @@
             </ul>
         </div>
         <div class="nav_shop">
-            <a href="#" class="nav__icon">
-                <i class='bx bxs-user-circle' ></i>
-            </a>
-            <div class="nav__shop-content">
-                <div class="title__shop">
-                    <span>Profile</span>
-                </div>
-                <div class="btn-checkout">
-                    <span>LONG OUT</span>
-                </div>
-            </div>
-        </div>
-    </nav>
+          <a href="#" class="nav__icon">
+              <i class='bx bxs-user-circle' ></i>
+          </a>
+          <div class="nav__shop-content">
+              <div class="btn-checkout">
+                  <span>LOG OUT</span>
+              </div>
+          </div>
+      </div>
+  </nav>
 </header>
 
 <!-- Navbar -->
@@ -120,13 +117,15 @@
             </ul>
           </div>
           <div class = "purchase-info">
-            <input type = "number" min = "0" value = "1">
-            <button type = "button" class = "btn">
+            <input type="number" onkeyup="mult(this.value)" required />
+            <h2 id="total"></h2>
+            <!-- <button type = "button" class = "btn" onclick="tombol()"> -->
+              <button type = "button" class = "btn">
               Add to Cart <i class = "fas fa-shopping-cart"></i>
             </button>
             <button type = "button" class = "btn">Compare</button>
           </div>
-          </div>
+          </div>  
         </main>
         <footer class="footer section bd-container">
             <div class="footer__container bd-grid">
@@ -174,6 +173,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="js/slick.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- <script>
+      function tombol() {
+        swal({
+          title: 'Your Transaction Is Success',
+          text: 'Please Wait For Your Order :) ',
+          icon: 'success',
+          button: true,
+        }).then(function () {
+          window.location = 'Home.html';
+        });
+      }
+    </script> -->
+
           <script>
             const imgs = document.querySelectorAll('.img-select a');
         const imgBtns = [...imgs];
@@ -195,5 +208,6 @@
         
         window.addEventListener('resize', slideImage);
           </script>
+          <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>    -->
 </body>
 </html>

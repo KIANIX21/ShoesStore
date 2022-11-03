@@ -15,7 +15,17 @@
 
  */
 /* global window, document, define, jQuery, setInterval, clearInterval */
-;(function(factory) {
+;(function(factory) {        
+    // function validation() {
+    //     var username = document.getElementById("username").value;
+    //     Swal({
+    //         icon: 'success',
+    //         title: 'Login Successfully' + '\n Welcome' + '\n' + username
+    //     }).then(function () {
+    //         window.location = 'Home.html';
+    //     });
+    //     return false;
+    // }
     'use strict';
     if (typeof define === 'function' && define.amd) {
         define(['jquery'], factory);
