@@ -615,7 +615,7 @@ margin-bottom: var(--mb-3);
 
 /* Form */
   .contact-form{
-    display: flex;
+    display: flexbox;
   }
   
   .input-fields{
@@ -626,7 +626,7 @@ margin-bottom: var(--mb-3);
   }
   
   .input-fields{
-    width: 48%;
+    width: 100%;
   }
   
   .input-fields .input{
