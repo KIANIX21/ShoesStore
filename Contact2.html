@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/product.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/Style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>ShoesStore</title>
 </head>
@@ -15,13 +16,13 @@
             <div class="nav__toggle" id="nav-toggle">
                 <i class='bx bx-menu'></i>
             </div>
-            <a href="index.html" class="nav__logo">ShoesStore</a>
+            <a href="home.html" class="nav__logo">ShoesStore</a>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#AboutUs" class="nav__link active-link">About</a></li>
-                    <li class="nav__item"><a href="product.html" class="nav__link ">Product</a></li>
-                    <li class="nav__item"><a href="Contact.html" class="nav__link">Contact</a></li>
+                    <li class="nav__item"><a href="home.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="AboutUs2.html" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="product2.html" class="nav__link">Product</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link active-link">Contact</a></li>
                 </ul>
             </div>
             <div class="nav_shop">
@@ -30,38 +31,43 @@
                 </a>
                 <div class="nav__shop-content">
                     <div class="btn-checkout">
-                        <li><i class='bx bxs-log-in-circle' ><a href="login.html"> LOG IN</a></i></li>
+                        <li><i class='bx bxs-log-out-circle' ><a href="/index.html"> LOG OUT</i></a></li>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
     <!-- Header -->
-    <main class="l-main">
-        <div style="background-color: #ABD9FF;">
-        <section class="about section bd-container" id="about" >
-            <span class="section-subtitle" style="font-size: 40px;">About us</span>
-            <div class="about__container bd-grid">
-                <div class="about__data">
-                    <h2 class="section-title about__initial">We create the best local shoes</h2>
-                    <p class="about__description">Shoes Store is a website that is engaged in the sale of shoes, which has several types of sneakers for: Kids Shoes, Women's Shoes and Men's Shoes. With the ShoesStore e-commerce website, it can help market their products using internet media so that they can bring in many customers and customers around the world can see and buy products without having to come directly to the store.</p>
+    <div style="background-color: #aebdca;">
+        <section class="contact section bd-container" id="contact">
+            <div class="contact__container bd-grid">
+                <div class="contact__data">
+                    <span class="section-subtitle contact__initial">Let's Talk</span>
+                    <h2 class="section-title contact__initial">Contact Us</h2>
+                    <p class="contact__description">
+                        If you want to buy shoes in our store, contact us and we will immediately serve you with service 24/7</p>
                 </div>
-                <img src="images/aboutus.jpg" alt="" class="about__img">
             </div>
         </section>
     </div>
-    <h1 class="home__title" style="text-align: center;">Our Team</h1>
-    <div class="products__container bd-grid slick_two">
-        <div class="products__content">
-            <img src="images/Nopal.png" alt="" class="product__img">
-            <h3 class="products__name">Naufal Febryansyah</h3>
+    <div class="bd-container">
+        <div class="title">
+          <h2>IF YOU HAVE ANY QUESTIONS, PLEASE FILL OUT THE FORM BELOW</h2>
         </div>
-            <div class="products__content">
-                <img src="images/Sonya.png" alt="" class="product__img">
-                <h3 class="products__name">Sonya Angelline Sinaga</h3>
+        <form method="post">
+            <div class="contact-form">
+                <div class="input-fields">
+                    <input type="text" class="input" placeholder="Name" value="">
+                    <input type="text" class="input" placeholder="Phone" value="">
+                    <input type="text" class="input" placeholder="City" value="">
+                </div>        
+                    <div class="input-fields">
+                        <textarea placeholder="Message" class="input"></textarea>
+                        <div class="btn" onclick="button()">Sent</div>
+                    </div>
             </div>
-
-    </main>
+        </form>
+    </div>
     <footer class="footer section bd-container">
         <div class="footer__container bd-grid">
             <div class="footer__content">
@@ -93,6 +99,22 @@
         </div>
         <p class="footer__copy">&#169; 2022 Group 4. All right reserved</p>
     </footer>
-    <script src="js/Main.js"></script>
+        <script type="text/javascript">
+      function button() {
+        swal({
+          title: 'Your Question Have Been Sent',
+          icon: 'success',
+          button: true,
+        }).then(function () {
+          window.location = 'home.html';
+        });
+      }
+    </script>
+     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+     <script>
+       import swal from 'sweetalert';
+     </script>
+     
+<script src="js/Main.js"></script>
 </body>
 </html>
